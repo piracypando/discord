@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url("https://cdn.i-scmp.com/sites/default/files/styles/1920x1080/public/d8/images/canvas/2021/03/12/7bf0ee0e-5ed1-4a5a-b30c-684c674ccceb_0561801e.jpg?itok=UbUba8Tb&v=1615542207") no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-        }
-        
-        .widget-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .widget {
-            width: 300px;
-            padding: 20px;
-            background: rgba(94, 214, 134, 0.4);
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(109, 235, 140, 0.61);
-            backdrop-filter: blur(10px);
-        }
-        
-        .widget img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        
-        .widget h1 {
-            font-size: 24px;
-            margin: 0;
-            font-family: monospace;
-        }
-        
-        .widget p {
-            font-size: 16px;
-            margin: 5px 0;
-            font-family: monospace;
-        }
-    </style>
+  <title>Discord User Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("https://cdn.discordapp.com/attachments/978913112235335722/1108441856724967464/Texturelabs_LensFX_197M.jpg");
+      background-repeat: repeat;
+      filter: blur(.6px);
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(142, 150, 66, 0.274);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: rgb(255, 255, 255);
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.24);
+      font-family: monospace;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.349);
+      font-family: monospace;
+    }
+
+    .glow {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    }
+
+    .vintage {
+      filter: sepia(50%) brightness(150%) saturate(200%);
+    }
+  </style>
 </head>
 <body>
-    <div class="widget-container">
-        <div class="widget">
-            <img src="https://cdn.discordapp.com/avatars/885494451647176744/67236fdb975a02636fd2d52299eeefe0.png?size=1024" alt="Avatar">
-            <h1>pando#0001</h1>
-            <p> Graphic designer</p>
-        </div>
-    </div>
+  <div class="container">
+    <img class="avatar glow vintage" src="https://cdn.discordapp.com/avatars/885494451647176744/67236fdb975a02636fd2d52299eeefe0.png?size=1024" alt="Avatar">
+    <h1>Pando#0001</h1>
+    <p>ID - 885494451647176744</p>
+  </div>
 </body>
 </html>
